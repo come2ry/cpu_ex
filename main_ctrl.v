@@ -587,7 +587,7 @@ module main_ctrl (instruction,
 
 //
 // 追加設計 1 のヒント(16)：I 形式の命令 sw の追加、レジスタファイルへの制御信号の記述
-//
+// 追記(10/24 15:30)
       `SW:     reg_write_enable_tmp = 1'b0;
 //
 //

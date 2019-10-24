@@ -30,7 +30,8 @@
 //
 // 追加設計 1 のヒント(1)：I 形式の命令 addiu の追加、命令コードの定義
 //
-`define  ADDIU  6'b001100
+// 追記(10/24 14:50)
+`define  ADDIU  6'b001001
 //
 //
 
@@ -39,7 +40,7 @@
 //
 // 追加設計 1 のヒント(10)：I 形式の命令 sw の追加、命令コードの定義
 //
-`define     SW  6'b001100  //  store word (I 形式)
+`define     SW  6'b101011  //  store word (I 形式)
 //
 //
 //
@@ -288,8 +289,8 @@ module main_ctrl (instruction,
   //
 //
 // 追加設計 1 のヒント(11)：I 形式の命令 sw の追加、RAM への制御信号の記述
-//
-  assign  ram_write_enable = ((op_code == `SW) && 0) ? 1'b1 : 1'b0;
+// 追記(10/24 15:23)
+  assign  ram_write_enable = (op_code == `SW) ? 1'b1 : 1'b0;
 //
 //
 //
@@ -318,16 +319,16 @@ module main_ctrl (instruction,
 
 //
 // 追加設計 1 のヒント(12)：I 形式の命令 sw の追加、is_branch モジュールへの制御信号の記述
-//
-      `SW:     is_branch_ctrl_tmp = 3'bXXX;
+// 追記(10/24 15:24)
+      `SW:     is_branch_ctrl_tmp = 3'b110;
 //
 //
 //
       `ADDI:   is_branch_ctrl_tmp = 3'b110;  // do nothing
 //
 // 追加設計 1 のヒント(2)：I 形式の命令 addiu の追加、is_branch モジュールへの制御信号の記述
-//
-      `ADDIU:  is_branch_ctrl_tmp = 3'bXXX;
+// 追記(10/24 15:00)
+      `ADDIU:  is_branch_ctrl_tmp = 3'b110;
 //
 //
 //
@@ -423,16 +424,16 @@ module main_ctrl (instruction,
 
 //
 // 追加設計 1 のヒント(13)：I 形式の命令 sw の追加、ALU の入力ポート B へ流すデータを選択するセレクト信号の記述
-//
-      `SW:     alu_b_sel1_s_tmp = 1'bX;
+// 追記(10/24 15:25)
+      `SW:     alu_b_sel1_s_tmp = 1'b1;
 //
 //
 //
       `ADDI:   alu_b_sel1_s_tmp = 1'b1;
 //
 // 追加設計 1 のヒント(3)：I 形式の命令 addiu の追加、ALU の入力ポート B へ流すデータを選択するセレクト信号の記述
-//
-      `ADDIU:  alu_b_sel1_s_tmp = 1'bX;
+//  追記(10/24 15:13)
+      `ADDIU:  alu_b_sel1_s_tmp = 1'b1;
 //
 //
 //
@@ -477,11 +478,11 @@ module main_ctrl (instruction,
   assign do_sign_ext = ((op_code == `ADDI)
 //
 // 追加設計 1 のヒント(4)：I 形式の命令 addiu の追加、符号拡張を行う制御信号の記述
-//
+//  追記なし(10/24 15:15)
                         || ((op_code == `ADDIU) && 0)
 //
 // 追加設計 1 のヒント(14)：I 形式の命令 sw の追加、符号拡張を行う制御信号の記述
-//
+// TODO: 追記なし(10/24 15:28)
                         || ((op_code == `SW) && 0)
 //
 //
@@ -524,16 +525,16 @@ module main_ctrl (instruction,
 
 //
 // 追加設計 1 のヒント(15)：I 形式の命令 sw の追加、加算を行う制御信号の記述
-//
-      `SW:     alu_op_tmp = 3'bXXX;
+// 追記(10/24 15:29)
+      `SW:     alu_op_tmp = 3'b000;
 //
 //
 //
       `ADDI:   alu_op_tmp = 3'b000;
 //
 // 追加設計 1 のヒント(5)：I 形式の命令 addiu の追加、加算を行う制御信号の記述
-//
-      `ADDIU:  alu_op_tmp = 3'bXXX;
+//  追記(10/24 15:16)
+      `ADDIU:  alu_op_tmp = 3'b000;
 //
 //
 //
@@ -587,15 +588,15 @@ module main_ctrl (instruction,
 //
 // 追加設計 1 のヒント(16)：I 形式の命令 sw の追加、レジスタファイルへの制御信号の記述
 //
-      `SW:     reg_write_enable_tmp = 1'bX;
+      `SW:     reg_write_enable_tmp = 1'b0;
 //
 //
 //
       `ADDI:   reg_write_enable_tmp = 1'b1;
 //
 // 追加設計 1 のヒント(6)：I 形式の命令 addiu の追加、レジスタファイルへの制御信号の記述
-//
-      `ADDIU:  reg_write_enable_tmp = 1'bX;
+// 追記(10/24 15:17)
+      `ADDIU:  reg_write_enable_tmp = 1'b1;
 //
 //
 //
@@ -660,8 +661,8 @@ module main_ctrl (instruction,
       `ADDI:   alu_ram_sel_s_tmp = 1'b0;
 //
 // 追加設計 1 のヒント(7)：I 形式の命令 addiu の追加、レジスタファイルの方へ流すデータを選択するセレクト信号の記述
-//
-      `ADDIU:  alu_ram_sel_s_tmp = 1'bX;
+//  追記(10/24 15:18)
+      `ADDIU:  alu_ram_sel_s_tmp = 1'b0;
 //
 //
 //
@@ -703,8 +704,8 @@ module main_ctrl (instruction,
       `ADDI:   reg_widx_sel1_s_tmp = 1'b0;
 //
 // 追加設計 1 のヒント(8)：I 形式の命令 addiu の追加、レジスタファイルの write_idx へ流すデータを選択するセレクト信号の記述
-//
-      `ADDIU:  reg_widx_sel1_s_tmp = 1'bX;
+// 追記(10/24 15:20)
+      `ADDIU:  reg_widx_sel1_s_tmp = 1'b0;
 //
 //
 //
@@ -752,8 +753,8 @@ module main_ctrl (instruction,
       `ADDI:   link_tmp = 1'b0;
 //
 // 追加設計 1 のヒント(9)：I 形式の命令 addiu の追加、レジスタファイルの write_idx へ流すデータを選択するセレクト信号の記述
-//
-      `ADDIU:  link_tmp = 1'bX;
+// 追記(10/24 15:21)
+      `ADDIU:  link_tmp = 1'b0;
 //
 //
 //
