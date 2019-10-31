@@ -353,7 +353,7 @@ module main_ctrl (instruction,
 //
 // 追加設計 3 のヒント(2)：I 形式の命令 SLTIU の追加、is_branch モジュールへの制御信号の記述
 //(update 2019/10/31 15:59)
-      `SLTIU:  is_branch_ctrl_tmp = 3'b101; // <, LT
+      `SLTIU:  is_branch_ctrl_tmp = 3'b110;  // do nothing
 //
 //
 //
@@ -653,7 +653,7 @@ module main_ctrl (instruction,
 //
 // 追加設計 3 のヒント(19)：I 形式の命令 LW の追加、レジスタファイルの方へ流すデータを選択するセレクト信号の記述
 //(update 2019/10/31 16:21)
-      `LW:     alu_ram_sel_s_tmp = 1'b0;
+      `LW:     alu_ram_sel_s_tmp = 1'b1;
 //
 //
 //
