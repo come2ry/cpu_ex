@@ -1,5 +1,5 @@
 Flow report for DE2_115_Default
-Thu Oct 31 15:28:09 2019
+Thu Oct 31 16:52:47 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Oct 31 15:28:09 2019           ;
+; Flow Status                        ; Successful - Thu Oct 31 16:52:26 2019           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DE2_115_Default                                 ;
 ; Top-level Entity Name              ; DE2_115_Default                                 ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F29C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 4,844 / 114,480 ( 4 % )                         ;
-;     Total combinational functions  ; 4,290 / 114,480 ( 4 % )                         ;
+; Total logic elements               ; 4,918 / 114,480 ( 4 % )                         ;
+;     Total combinational functions  ; 4,304 / 114,480 ( 4 % )                         ;
 ;     Dedicated logic registers      ; 2,128 / 114,480 ( 2 % )                         ;
 ; Total registers                    ; 2128                                            ;
 ; Total pins                         ; 518 / 529 ( 98 % )                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/31/2019 14:26:39 ;
+; Start date & time ; 10/31/2019 16:49:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_115_Default     ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                               ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.157249959907715                                                   ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.157250818311261                                                   ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                  ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                   ; --            ; --          ; --             ;
 ; MISC_FILE                           ; D:/Assignment/DE2_115_Default/DE2_115_Default.dpf                   ; --            ; --          ; --             ;
@@ -97,13 +97,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 424 MB              ; 00:00:23                           ;
-; Fitter                    ; 00:02:46     ; 1.0                     ; 764 MB              ; 00:02:45                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 362 MB              ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:18     ; 1.0                     ; 505 MB              ; 00:00:15                           ;
-; MIF/HEX Update            ; 00:00:02     ; 1.0                     ; 390 MB              ; 00:00:02                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 369 MB              ; 00:00:05                           ;
-; Total                     ; 00:03:42     ; --                      ; --                  ; 00:03:35                           ;
+; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 420 MB              ; 00:00:24                           ;
+; Fitter                    ; 00:02:03     ; 1.0                     ; 739 MB              ; 00:02:02                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 366 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:18     ; 1.0                     ; 501 MB              ; 00:00:16                           ;
+; Total                     ; 00:02:52     ; --                      ; --                  ; 00:02:47                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,8 +114,6 @@ applicable agreement for further details.
 ; Fitter                    ; icec26.ice.nuie.nagoya-u.ac.jp ; CentOS Linux ; CentOS Linux ; x86_64         ;
 ; Assembler                 ; icec26.ice.nuie.nagoya-u.ac.jp ; CentOS Linux ; CentOS Linux ; x86_64         ;
 ; TimeQuest Timing Analyzer ; icec26.ice.nuie.nagoya-u.ac.jp ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; MIF/HEX Update            ; icec26.ice.nuie.nagoya-u.ac.jp ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Assembler                 ; icec26.ice.nuie.nagoya-u.ac.jp ; CentOS Linux ; CentOS Linux ; x86_64         ;
 +---------------------------+--------------------------------+--------------+--------------+----------------+
 
 
@@ -128,8 +124,6 @@ quartus_map --read_settings_files=on --write_settings_files=off DE2_115_Default 
 quartus_fit --read_settings_files=off --write_settings_files=off DE2_115_Default -c DE2_115_Default
 quartus_asm --read_settings_files=off --write_settings_files=off DE2_115_Default -c DE2_115_Default
 quartus_sta DE2_115_Default -c DE2_115_Default
-quartus_cdb DE2_115_Default -c DE2_115_Default --update_mif
-quartus_asm --read_settings_files=on --write_settings_files=off DE2_115_Default -c DE2_115_Default
 
 
 
