@@ -60,8 +60,8 @@
 `define BLTZAL  6'b000001  //  branch on less than zero and link (I 形式)
 //
 // 追加設計 2 のヒント(1)：J 形式の命令 J の追加、命令コードの定義
-//
-`define  J  6'b001100
+// (update 2019/10/31 14:02)
+`define  J  6'b000010
 //
 //
 //
@@ -372,11 +372,11 @@ module main_ctrl (instruction,
   //
 //
 // 追加設計 2 のヒント(2)：J 形式の命令 J の追加、jp_sel モジュールへの制御信号の記述
-//
+// (update 2019/10/31 14:10)
 //
 // 更に、追加設計 4 のヒント(2)：J 形式の命令 JAL (jump and link) の追加、jp_sel モジュールへの制御信号の記述
 //
-  assign  jp = (((op_code == `J) && 0) || ((op_code == `JAL) && 0)) ? 1'b1 : 1'b0;
+  assign  jp = ((op_code == `J) || (op_code == `JAL)) ? 1'b1 : 1'b0;
 //
 //
 //
@@ -613,8 +613,8 @@ module main_ctrl (instruction,
 
 //
 // 追加設計 2 のヒント(3)：J 形式の命令 J の追加、レジスタファイルへの制御信号の記述
-//
-      `J:      reg_write_enable_tmp = 1'b1;
+// (update 2019/10/31 14:11)
+      `J:      reg_write_enable_tmp = 1'b0;
 //
 //
 //
