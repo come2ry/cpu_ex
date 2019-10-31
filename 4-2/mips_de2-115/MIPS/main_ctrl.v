@@ -21,8 +21,8 @@
 `define      R  6'b000000  //  R 形式 (add, addu, sub, subu, and, or, slt, jalr, jr)
 //
 // 追加設計 3 のヒント(14)：I 形式の命令 LW の追加、命令コードの定義
-//
-`define     LW  6'b001100
+//(update 2019/10/31 16:31)
+`define     LW  6'b100011
 //
 //
 //
@@ -47,8 +47,8 @@
 `define    BEQ  6'b000100  //  branch on equal (I 形式)
 //
 // 追加設計 3 のヒント(9)：I 形式の命令 BNE の追加、命令コードの定義
-//
- `define    BNE  6'b001100
+//(update 2019/10/31 16:30)
+ `define    BNE  6'b000101
 //
 //
 //
@@ -76,8 +76,8 @@
 `define   SLTI  6'b001010  //  set on less than immediate, signed (I 形式)
 //
 // 追加設計 3 のヒント(1)：I 形式の命令 SLTIU の追加、命令コードの定義
-//
-`define   SLTIU 6'b001100
+// (update 2019/10/31 15:52)
+`define   SLTIU 6'b001011
 //
 //
 //
@@ -311,8 +311,8 @@ module main_ctrl (instruction,
       `R:      is_branch_ctrl_tmp = 3'b110;  // do nothing
 //
 // 追加設計 3 のヒント(15)：I 形式の命令 LW の追加、is_branch モジュールへの制御信号の記述
-//
-      `LW:     is_branch_ctrl_tmp = 3'bXXX;
+//(update 2019/10/31 16:34)
+      `LW:     is_branch_ctrl_tmp = 3'b110;  // do nothing
 //
 //
 //
@@ -320,7 +320,7 @@ module main_ctrl (instruction,
 //
 // 追加設計 1 のヒント(12)：I 形式の命令 sw の追加、is_branch モジュールへの制御信号の記述
 // 追記(10/24 15:24)
-      `SW:     is_branch_ctrl_tmp = 3'b110;
+      `SW:     is_branch_ctrl_tmp = 3'b110;  // do nothing
 //
 //
 //
@@ -337,8 +337,8 @@ module main_ctrl (instruction,
       `BEQ:    is_branch_ctrl_tmp = 3'b000;  // ==, EQ
 //
 // 追加設計 3 のヒント(10)：I 形式の命令 BNE の追加、is_branch モジュールへの制御信号の記述
-//
-      `BNE:    is_branch_ctrl_tmp = 3'bXXX;
+//(update 2019/10/31 16:33)
+      `BNE:    is_branch_ctrl_tmp = 3'b001;  // != NEQ
 //
 //
 //
@@ -352,8 +352,8 @@ module main_ctrl (instruction,
       `SLTI:   is_branch_ctrl_tmp = 3'b110;  // do nothing
 //
 // 追加設計 3 のヒント(2)：I 形式の命令 SLTIU の追加、is_branch モジュールへの制御信号の記述
-//
-      `SLTIU:  is_branch_ctrl_tmp = 3'bXXX;
+//(update 2019/10/31 15:59)
+      `SLTIU:  is_branch_ctrl_tmp = 3'b101; // <, LT
 //
 //
 //
@@ -416,8 +416,8 @@ module main_ctrl (instruction,
       `R:      alu_b_sel1_s_tmp = 1'b0;
 //
 // 追加設計 3 のヒント(16)：I 形式の命令 LW の追加、ALU の入力ポート B へ流すデータを選択するセレクト信号の記述
-//
-      `LW:     alu_b_sel1_s_tmp = 1'bX;
+//(update 2019/10/31 16:39)
+      `LW:     alu_b_sel1_s_tmp = 1'b1;
 //
 //
 //
@@ -442,8 +442,8 @@ module main_ctrl (instruction,
       `BEQ:    alu_b_sel1_s_tmp = 1'b0;
 //
 // 追加設計 3 のヒント(11)：I 形式の命令 BNE の追加、ALU の入力ポート B へ流すデータを選択するセレクト信号の記述
-//
-      `BNE:    alu_b_sel1_s_tmp = 1'bX;
+//(update 2019/10/31 16:08)
+      `BNE:    alu_b_sel1_s_tmp = 1'b0;
 //
 //
 //
@@ -452,8 +452,8 @@ module main_ctrl (instruction,
       `SLTI:   alu_b_sel1_s_tmp = 1'b1;
 //
 // 追加設計 3 のヒント(3)：I 形式の命令 SLTIU の追加、ALU の入力ポート B へ流すデータを選択するセレクト信号の記述
-//
-      `SLTIU:  alu_b_sel1_s_tmp = 1'bX;
+//(update 2019/10/31 16:08)
+      `SLTIU:  alu_b_sel1_s_tmp = 1'b1;
 //
 //
 //
@@ -491,8 +491,8 @@ module main_ctrl (instruction,
                         || (op_code == `BEQ)
 //
 // 追加設計 3 のヒント(12)：I 形式の命令 BNE の追加、符号拡張を行う制御信号の記述
-//
-                        || ((op_code == `BNE) && 0)
+//(update 2019/10/31 16:37)
+                        || (op_code == `BNE)
 //
 //
 //
@@ -517,8 +517,8 @@ module main_ctrl (instruction,
       `R:      alu_op_tmp = 3'b010;
 //
 // 追加設計 3 のヒント(17)：I 形式の命令 LW の追加、加算を行う制御信号の記述
-//
-      `LW:     alu_op_tmp = 3'bXXX;
+//(update 2019/10/31 16:43)
+      `LW:     alu_op_tmp = 3'b000;
 //
 //
 //
@@ -544,8 +544,8 @@ module main_ctrl (instruction,
       `SLTI:   alu_op_tmp = 3'b110;
 //
 // 追加設計 3 のヒント(4)：I 形式の命令 SLTIU の追加
-//
-      `SLTIU:  alu_op_tmp = 3'bXXX;
+//(update 2019/10/31 16:10)
+      `SLTIU:  alu_op_tmp = 3'b111;
 //
 //
 //
@@ -579,8 +579,8 @@ module main_ctrl (instruction,
 
 //
 // 追加設計 3 のヒント(18)：I 形式の命令 LW の追加、レジスタファイルへの制御信号の記述
-//
-      `LW:     reg_write_enable_tmp = 1'bX;
+//(update 2019/10/31 16:45)
+      `LW:     reg_write_enable_tmp = 1'b1;
 //
 //
 //
@@ -605,8 +605,8 @@ module main_ctrl (instruction,
       `BEQ:    reg_write_enable_tmp = 1'b0;
 //
 // 追加設計 3 のヒント(13)：I 形式の命令 BNE の追加、レジスタファイルへの制御信号の記述
-//
-      `BNE:    reg_write_enable_tmp = 1'bX;
+//(update 2019/10/31 16:17)
+      `BNE:    reg_write_enable_tmp = 1'b0;
 //
 //
 //
@@ -630,8 +630,8 @@ module main_ctrl (instruction,
       `SLTI:   reg_write_enable_tmp = 1'b1;
 //
 // 追加設計 3 のヒント(5)：I 形式の命令 SLTIU の追加、レジスタファイルへの制御信号の記述
-//
-      `SLTIU:  reg_write_enable_tmp = 1'b0;
+//(update 2019/10/31 16:17)
+      `SLTIU:  reg_write_enable_tmp = 1'b1;
 //
 //
 //
@@ -652,8 +652,8 @@ module main_ctrl (instruction,
       `R:      alu_ram_sel_s_tmp = 1'b0;
 //
 // 追加設計 3 のヒント(19)：I 形式の命令 LW の追加、レジスタファイルの方へ流すデータを選択するセレクト信号の記述
-//
-      `LW:     alu_ram_sel_s_tmp = 1'bX;
+//(update 2019/10/31 16:21)
+      `LW:     alu_ram_sel_s_tmp = 1'b0;
 //
 //
 //
@@ -673,8 +673,8 @@ module main_ctrl (instruction,
       `SLTI:   alu_ram_sel_s_tmp = 1'b0;
 //
 // 追加設計 3 のヒント(6)：I 形式の命令 SLTIU の追加、レジスタファイルの方へ流すデータを選択するセレクト信号の記述
-//
-      `SLTIU:  alu_ram_sel_s_tmp = 1'bX;
+//(update 2019/10/31 16:20)
+      `SLTIU:  alu_ram_sel_s_tmp = 1'b0;
 //
 //
 //
@@ -695,8 +695,8 @@ module main_ctrl (instruction,
       `R:      reg_widx_sel1_s_tmp = 1'b1;
 //
 // 追加設計 3 のヒント(20)：I 形式の命令 LW の追加、レジスタファイルの write_idx の方へ流すデータを選択するセレクト信号の記述
-//
-      `LW:     reg_widx_sel1_s_tmp = 1'bX;
+//(update 2019/10/31 16:24)
+      `LW:     reg_widx_sel1_s_tmp = 1'b0;
 //
 //
 //
@@ -716,8 +716,8 @@ module main_ctrl (instruction,
       `SLTI:   reg_widx_sel1_s_tmp = 1'b0;
 //
 // 追加設計 3 のヒント(7)：I 形式の命令 SLTIU の追加、レジスタファイルの write_idx の方へ流すデータを選択するセレクト信号の記述
-//
-      `SLTIU:  reg_widx_sel1_s_tmp = 1'bX;
+//(update 2019/10/31 16:24)
+      `SLTIU:  reg_widx_sel1_s_tmp = 1'b0;
 //
 //
 //
@@ -744,8 +744,8 @@ module main_ctrl (instruction,
           end
 //
 // 追加設計 3 のヒント(21)：I 形式の命令 LW の追加、レジスタファイルの write_idx へ流すデータを選択するセレクト信号の記述
-//
-      `LW:     link_tmp = 1'bX;
+//(update 2019/10/31 16:32)
+      `LW:     link_tmp = 1'b0;
 //
 //
 //
@@ -779,8 +779,8 @@ module main_ctrl (instruction,
       `SLTI:   link_tmp = 1'b0;
 //
 // 追加設計 3 のヒント(8)：I 形式の命令 SLTIU の追加、レジスタファイルの write_idx へ流すデータを選択するセレクト信号の記述
-//
-      `SLTIU:  link_tmp = 1'bX;
+//(update 2019/10/31 16:29)
+      `SLTIU:  link_tmp = 1'b0;
 //
 //
 //
