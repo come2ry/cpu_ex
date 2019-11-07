@@ -68,7 +68,8 @@
 //
 // 追加設計 4 のヒント(1)：J 形式の命令 JAL の追加、命令コードの定義
 // JAL の命令コード。既に修正済。変更の必要なし。
-`define    JAL  6'b000011  //  jump and link (J 形式)
+`define    JAL  6'b0000100  //  jump and link (J 形式)
+// `define    JAL  6'b000011  //  jump and link (J 形式)
 //
 //
 //
