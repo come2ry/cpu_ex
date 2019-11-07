@@ -1,5 +1,5 @@
 Flow report for DE2_115_Default
-Thu Oct 31 17:25:48 2019
+Thu Nov  7 13:43:59 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Oct 31 17:25:28 2019           ;
+; Flow Status                        ; Successful - Thu Nov  7 13:43:37 2019           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DE2_115_Default                                 ;
 ; Top-level Entity Name              ; DE2_115_Default                                 ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F29C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 5,026 / 114,480 ( 4 % )                         ;
-;     Total combinational functions  ; 4,342 / 114,480 ( 4 % )                         ;
+; Total logic elements               ; 4,911 / 114,480 ( 4 % )                         ;
+;     Total combinational functions  ; 4,355 / 114,480 ( 4 % )                         ;
 ;     Dedicated logic registers      ; 2,128 / 114,480 ( 2 % )                         ;
 ; Total registers                    ; 2128                                            ;
 ; Total pins                         ; 518 / 529 ( 98 % )                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/31/2019 17:20:45 ;
+; Start date & time ; 11/07/2019 13:36:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_115_Default     ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                               ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.157251004515328                                                   ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.157310141507993                                                   ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                  ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                   ; --            ; --          ; --             ;
 ; MISC_FILE                           ; D:/Assignment/DE2_115_Default/DE2_115_Default.dpf                   ; --            ; --          ; --             ;
@@ -97,24 +97,24 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 420 MB              ; 00:00:22                           ;
-; Fitter                    ; 00:04:06     ; 1.0                     ; 746 MB              ; 00:04:05                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 362 MB              ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:18     ; 1.0                     ; 501 MB              ; 00:00:16                           ;
-; Total                     ; 00:04:53     ; --                      ; --                  ; 00:04:48                           ;
+; Analysis & Synthesis      ; 00:00:27     ; 1.0                     ; 425 MB              ; 00:00:23                           ;
+; Fitter                    ; 00:06:01     ; 1.0                     ; 753 MB              ; 00:05:59                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 358 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:20     ; 1.0                     ; 505 MB              ; 00:00:17                           ;
+; Total                     ; 00:06:53     ; --                      ; --                  ; 00:06:44                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                             ;
-+---------------------------+------------------+--------------+--------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name      ; OS Version   ; Processor type ;
-+---------------------------+------------------+--------------+--------------+----------------+
-; Analysis & Synthesis      ; iceb31           ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Fitter                    ; iceb31           ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Assembler                 ; iceb31           ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; TimeQuest Timing Analyzer ; iceb31           ; CentOS Linux ; CentOS Linux ; x86_64         ;
-+---------------------------+------------------+--------------+--------------+----------------+
++-----------------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                           ;
++---------------------------+--------------------------------+--------------+--------------+----------------+
+; Module Name               ; Machine Hostname               ; OS Name      ; OS Version   ; Processor type ;
++---------------------------+--------------------------------+--------------+--------------+----------------+
+; Analysis & Synthesis      ; icec26.ice.nuie.nagoya-u.ac.jp ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Fitter                    ; icec26.ice.nuie.nagoya-u.ac.jp ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Assembler                 ; icec26.ice.nuie.nagoya-u.ac.jp ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; TimeQuest Timing Analyzer ; icec26.ice.nuie.nagoya-u.ac.jp ; CentOS Linux ; CentOS Linux ; x86_64         ;
++---------------------------+--------------------------------+--------------+--------------+----------------+
 
 
 ------------
