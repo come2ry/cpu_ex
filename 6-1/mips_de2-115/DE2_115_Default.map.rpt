@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE2_115_Default
-Thu Nov  7 13:37:24 2019
+Thu Nov  7 14:28:17 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -92,7 +92,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov  7 13:37:24 2019           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov  7 14:28:17 2019           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DE2_115_Default                                 ;
 ; Top-level Entity Name              ; DE2_115_Default                                 ;
@@ -213,46 +213,46 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                             ; Library ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+---------+
-; VGA_CHAR_Ctrl.v                  ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/VGA_CHAR_Ctrl.v                 ;         ;
-; VGA_CHAR_Ctrl_UpdateMONITOR.v    ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/VGA_CHAR_Ctrl_UpdateMONITOR.v   ;         ;
-; V/LCD_Controller.v               ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/LCD_Controller.v              ;         ;
-; V/I2C_Controller.v               ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/I2C_Controller.v              ;         ;
-; V/SEG7_LUT.v                     ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/SEG7_LUT.v                    ;         ;
-; V/LCD_TEST.v                     ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/LCD_TEST.v                    ;         ;
-; V/I2C_AV_Config.v                ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/I2C_AV_Config.v               ;         ;
-; V/SEG7_LUT_8.v                   ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/SEG7_LUT_8.v                  ;         ;
-; V/AUDIO_DAC.v                    ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/AUDIO_DAC.v                   ;         ;
-; V/VGA_Audio_PLL.v                ; yes             ; User Wizard-Generated File             ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/VGA_Audio_PLL.v               ;         ;
-; V/Reset_Delay.v                  ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/Reset_Delay.v                 ;         ;
-; MIPS/cpu.v                       ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/cpu.v                      ;         ;
-; VGA_Controller/Img_RAM.v         ; yes             ; User Wizard-Generated File             ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/VGA_Controller/Img_RAM.v        ;         ;
-; VGA_Controller/VGA_Controller.v  ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/VGA_Controller/VGA_Controller.v ;         ;
-; VGA_Controller/VGA_OSD_RAM.v     ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/VGA_Controller/VGA_OSD_RAM.v    ;         ;
-; VGA_CHAR_RAM.v                   ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/VGA_CHAR_RAM.v                  ;         ;
-; char30x40_ram.v                  ; yes             ; User Wizard-Generated File             ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/char30x40_ram.v                 ;         ;
-; KEYBOARD_DEC.v                   ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/KEYBOARD_DEC.v                  ;         ;
-; DE2_115_Default.v                ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/DE2_115_Default.v               ;         ;
-; MIPS/rom8x1024_DE2.v             ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/rom8x1024_DE2.v            ;         ;
-; MIPS/ram8x2048_DE2.v             ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/ram8x2048_DE2.v            ;         ;
-; MIPS/alu.v                       ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/alu.v                      ;         ;
-; MIPS/pc.v                        ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/pc.v                       ;         ;
-; MIPS/registers.v                 ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/registers.v                ;         ;
-; MIPS/plus4.v                     ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/plus4.v                    ;         ;
-; MIPS/adder32.v                   ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/adder32.v                  ;         ;
-; MIPS/mux32_32_32.v               ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/mux32_32_32.v              ;         ;
-; MIPS/mux5_5_5.v                  ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/mux5_5_5.v                 ;         ;
-; MIPS/main_ctrl.v                 ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/main_ctrl.v                ;         ;
-; MIPS/alu_ctrler.v                ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/alu_ctrler.v               ;         ;
-; MIPS/shifter32_32_l2.v           ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/shifter32_32_l2.v          ;         ;
-; MIPS/signext16_32.v              ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/signext16_32.v             ;         ;
-; MIPS/is_branch.v                 ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/MIPS/is_branch.v                ;         ;
-; VGA_Controller/VGA_Param.h       ; yes             ; Auto-Found Unspecified File            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/VGA_Controller/VGA_Param.h      ;         ;
+; VGA_CHAR_Ctrl.v                  ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/VGA_CHAR_Ctrl.v                 ;         ;
+; VGA_CHAR_Ctrl_UpdateMONITOR.v    ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/VGA_CHAR_Ctrl_UpdateMONITOR.v   ;         ;
+; V/LCD_Controller.v               ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/LCD_Controller.v              ;         ;
+; V/I2C_Controller.v               ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/I2C_Controller.v              ;         ;
+; V/SEG7_LUT.v                     ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/SEG7_LUT.v                    ;         ;
+; V/LCD_TEST.v                     ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/LCD_TEST.v                    ;         ;
+; V/I2C_AV_Config.v                ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/I2C_AV_Config.v               ;         ;
+; V/SEG7_LUT_8.v                   ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/SEG7_LUT_8.v                  ;         ;
+; V/AUDIO_DAC.v                    ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/AUDIO_DAC.v                   ;         ;
+; V/VGA_Audio_PLL.v                ; yes             ; User Wizard-Generated File             ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/VGA_Audio_PLL.v               ;         ;
+; V/Reset_Delay.v                  ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/Reset_Delay.v                 ;         ;
+; MIPS/cpu.v                       ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/cpu.v                      ;         ;
+; VGA_Controller/Img_RAM.v         ; yes             ; User Wizard-Generated File             ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/VGA_Controller/Img_RAM.v        ;         ;
+; VGA_Controller/VGA_Controller.v  ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/VGA_Controller/VGA_Controller.v ;         ;
+; VGA_Controller/VGA_OSD_RAM.v     ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/VGA_Controller/VGA_OSD_RAM.v    ;         ;
+; VGA_CHAR_RAM.v                   ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/VGA_CHAR_RAM.v                  ;         ;
+; char30x40_ram.v                  ; yes             ; User Wizard-Generated File             ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/char30x40_ram.v                 ;         ;
+; KEYBOARD_DEC.v                   ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/KEYBOARD_DEC.v                  ;         ;
+; DE2_115_Default.v                ; yes             ; User Verilog HDL File                  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/DE2_115_Default.v               ;         ;
+; MIPS/rom8x1024_DE2.v             ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/rom8x1024_DE2.v            ;         ;
+; MIPS/ram8x2048_DE2.v             ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/ram8x2048_DE2.v            ;         ;
+; MIPS/alu.v                       ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/alu.v                      ;         ;
+; MIPS/pc.v                        ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/pc.v                       ;         ;
+; MIPS/registers.v                 ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/registers.v                ;         ;
+; MIPS/plus4.v                     ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/plus4.v                    ;         ;
+; MIPS/adder32.v                   ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/adder32.v                  ;         ;
+; MIPS/mux32_32_32.v               ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/mux32_32_32.v              ;         ;
+; MIPS/mux5_5_5.v                  ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/mux5_5_5.v                 ;         ;
+; MIPS/main_ctrl.v                 ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/main_ctrl.v                ;         ;
+; MIPS/alu_ctrler.v                ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/alu_ctrler.v               ;         ;
+; MIPS/shifter32_32_l2.v           ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/shifter32_32_l2.v          ;         ;
+; MIPS/signext16_32.v              ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/signext16_32.v             ;         ;
+; MIPS/is_branch.v                 ; yes             ; Auto-Found Verilog HDL File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/MIPS/is_branch.v                ;         ;
+; VGA_Controller/VGA_Param.h       ; yes             ; Auto-Found Unspecified File            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/VGA_Controller/VGA_Param.h      ;         ;
 ; altpll.tdf                       ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf              ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc         ;         ;
 ; stratixii_pll.inc                ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc       ;         ;
 ; cycloneii_pll.inc                ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc       ;         ;
-; db/altpll_k3n2.tdf               ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/altpll_k3n2.tdf              ;         ;
+; db/altpll_k3n2.tdf               ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/altpll_k3n2.tdf              ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc   ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
@@ -261,33 +261,33 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altrom.inc                       ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc              ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc              ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc            ;         ;
-; db/altsyncram_cco1.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/altsyncram_cco1.tdf          ;         ;
-; db/decode_hua.tdf                ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/decode_hua.tdf               ;         ;
-; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/decode_aaa.tdf               ;         ;
-; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/mux_1pb.tdf                  ;         ;
+; db/altsyncram_cco1.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/altsyncram_cco1.tdf          ;         ;
+; db/decode_hua.tdf                ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/decode_hua.tdf               ;         ;
+; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/decode_aaa.tdf               ;         ;
+; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/mux_1pb.tdf                  ;         ;
 ; lpm_rom.tdf                      ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/lpm_rom.tdf             ;         ;
 ; altrom.tdf                       ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/altrom.tdf              ;         ;
 ; memmodes.inc                     ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/others/maxplus2/memmodes.inc          ;         ;
 ; altsyncram.inc                   ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.inc          ;         ;
-; db/altsyncram_na01.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/altsyncram_na01.tdf          ;         ;
-; scancode.mif                     ; yes             ; Auto-Found Memory Initialization File  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/scancode.mif                    ;         ;
-; db/altsyncram_e9b1.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/altsyncram_e9b1.tdf          ;         ;
-; char30x40_ram.mif                ; yes             ; Auto-Found Memory Initialization File  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/char30x40_ram.mif               ;         ;
-; db/altsyncram_b801.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/altsyncram_b801.tdf          ;         ;
-; bmpfont.mif                      ; yes             ; Auto-Found Memory Initialization File  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/bmpfont.mif                     ;         ;
-; db/altsyncram_ol01.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/altsyncram_ol01.tdf          ;         ;
-; rom8x1024_DE2.mif                ; yes             ; Auto-Found Memory Initialization File  ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/rom8x1024_DE2.mif               ;         ;
-; db/altsyncram_28b1.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/altsyncram_28b1.tdf          ;         ;
+; db/altsyncram_na01.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/altsyncram_na01.tdf          ;         ;
+; scancode.mif                     ; yes             ; Auto-Found Memory Initialization File  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/scancode.mif                    ;         ;
+; db/altsyncram_e9b1.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/altsyncram_e9b1.tdf          ;         ;
+; char30x40_ram.mif                ; yes             ; Auto-Found Memory Initialization File  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/char30x40_ram.mif               ;         ;
+; db/altsyncram_b801.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/altsyncram_b801.tdf          ;         ;
+; bmpfont.mif                      ; yes             ; Auto-Found Memory Initialization File  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/bmpfont.mif                     ;         ;
+; db/altsyncram_ol01.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/altsyncram_ol01.tdf          ;         ;
+; rom8x1024_DE2.mif                ; yes             ; Auto-Found Memory Initialization File  ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/rom8x1024_DE2.mif               ;         ;
+; db/altsyncram_28b1.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/altsyncram_28b1.tdf          ;         ;
 ; altshift_taps.tdf                ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/altshift_taps.tdf       ;         ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
 ; lpm_compare.inc                  ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction                           ; /pub1/jikken/eda3/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
-; db/shift_taps_gkm.tdf            ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/shift_taps_gkm.tdf           ;         ;
-; db/altsyncram_5961.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/altsyncram_5961.tdf          ;         ;
-; db/add_sub_24e.tdf               ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/add_sub_24e.tdf              ;         ;
-; db/cntr_6pf.tdf                  ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/cntr_6pf.tdf                 ;         ;
-; db/cmpr_ogc.tdf                  ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/cmpr_ogc.tdf                 ;         ;
-; db/cntr_p8h.tdf                  ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/db/cntr_p8h.tdf                 ;         ;
+; db/shift_taps_gkm.tdf            ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/shift_taps_gkm.tdf           ;         ;
+; db/altsyncram_5961.tdf           ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/altsyncram_5961.tdf          ;         ;
+; db/add_sub_24e.tdf               ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/add_sub_24e.tdf              ;         ;
+; db/cntr_6pf.tdf                  ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/cntr_6pf.tdf                 ;         ;
+; db/cmpr_ogc.tdf                  ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/cmpr_ogc.tdf                 ;         ;
+; db/cntr_p8h.tdf                  ; yes             ; Auto-Generated Megafunction            ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/db/cntr_p8h.tdf                 ;         ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
@@ -421,9 +421,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                        ; IP Include File                                                                   ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
-; Altera ; ALTPLL       ; N/A     ; N/A          ; N/A          ; |DE2_115_Default|VGA_Audio_PLL:p1                                      ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/V/VGA_Audio_PLL.v        ;
-; Altera ; RAM: 2-PORT  ; N/A     ; N/A          ; N/A          ; |DE2_115_Default|VGA_OSD_RAM:u2|Img_RAM:u0                             ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/VGA_Controller/Img_RAM.v ;
-; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |DE2_115_Default|VGA_CHAR_RAM:u7|char30x40_ram:char30x40_ram_component ; /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/char30x40_ram.v          ;
+; Altera ; ALTPLL       ; N/A     ; N/A          ; N/A          ; |DE2_115_Default|VGA_Audio_PLL:p1                                      ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/V/VGA_Audio_PLL.v        ;
+; Altera ; RAM: 2-PORT  ; N/A     ; N/A          ; N/A          ; |DE2_115_Default|VGA_OSD_RAM:u2|Img_RAM:u0                             ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/VGA_Controller/Img_RAM.v ;
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |DE2_115_Default|VGA_CHAR_RAM:u7|char30x40_ram:char30x40_ram_component ; /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/char30x40_ram.v          ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -1896,7 +1896,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov  7 13:36:55 2019
+    Info: Processing started: Thu Nov  7 14:27:51 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE2_115_Default -c DE2_115_Default
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file VGA_CHAR_Ctrl.v
@@ -2754,7 +2754,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HSMC_TX_D_P[16]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 63 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/DE2_115_Default.map.smsg
+Info (144001): Generated suppressed messages file /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/DE2_115_Default.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|altpll_k3n2:auto_generated|pll1" has parameters clk2_multiply_by and clk2_divide_by specified but port CLK[2] is not connected
@@ -2851,15 +2851,15 @@ Info (21057): Implemented 6689 device resources after synthesis - the final reso
     Info (21064): Implemented 140 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 618 warnings
-    Info: Peak virtual memory: 427 megabytes
-    Info: Processing ended: Thu Nov  7 13:37:24 2019
-    Info: Elapsed time: 00:00:29
+    Info: Peak virtual memory: 420 megabytes
+    Info: Processing ended: Thu Nov  7 14:28:17 2019
+    Info: Elapsed time: 00:00:26
     Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in /mdhome/home0/aq3795250/Documents/ex2_2/5-2/mips_de2-115/DE2_115_Default.map.smsg.
+The suppressed messages can be found in /mdhome/home0/aq3795250/Documents/ex2_2/6-1/mips_de2-115/DE2_115_Default.map.smsg.
 
 
