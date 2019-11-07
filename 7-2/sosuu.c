@@ -22,7 +22,7 @@ main() {
   unsigned int j;
   unsigned int str1[16];
   unsigned int str2[16];
-  unsigned int MAX = 100000;
+  unsigned int MAX = 1000;
   unsigned int is_prime[MAX];
 
   for (i = 0; i < MAX; i += 1) {
@@ -67,7 +67,9 @@ main() {
         for (j = i+i; j <= k; j += i) {
           is_prime[j] = 0;
         } 
-	      my_i2a(i);
+        if (i != 2) {
+	        my_i2a(i);
+        }
       }
     }
 
