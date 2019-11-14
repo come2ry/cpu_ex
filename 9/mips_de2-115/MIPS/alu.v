@@ -84,8 +84,8 @@
 
 // 実験 9 のヒント（４）：mult, mflo 用の ALU 制御コードの define
 // (update 2019/11/14 14:43)
-'define     ALU_MULT 4'b1011
-'define     ALU_MFLO 4'b1100
+`define     ALU_MULT 4'b1011
+`define     ALU_MFLO 4'b1100
 
 
 // 実験 9 のヒント（５）：ALU モジュールの入力ポートの拡張
