@@ -148,12 +148,11 @@ SLTU       REG[rd] <= (REG[rs] < REG[rt]) ? 1 : 0;      SLTU rd,rs,rt
 
 // 実験 9 のヒント（９）：mult, mflo 命令に関するコメントの追加
 // (update 2019/11/14 14:50)
-/* R 形式
+R 形式
 MULT(op = 000000, func = 011000)
 MULT {Hi, Lo} <= REG[rs] * REG[rt]; MULT rs,rt
 MFLO(op = 000000, func = 010010)
 MFLO REG[rd] <= Lo; MFLO rd
-*/
 
 
 

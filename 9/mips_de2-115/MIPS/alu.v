@@ -108,11 +108,11 @@ input clock, reset; // 入力 クロック, リセット
 reg [31:0] hi; //上位
 reg [31:0] lo; //下位
 always @(posedge clock or negedge reset) begin
-  if (reset == 1’b0) begin
-    hi <= 32’h00000000;
-    lo <= 32’h00000000;
+  if (reset == 1'b0) begin
+    hi <= 32'h00000000;
+    lo <= 32'h00000000;
   end else begin
-    {hi, lo} <= (alu_ctrl == ‘ALU_MULT) ? alu_a * alu_b : {hi, lo};
+    {hi, lo} <= (alu_ctrl == `ALU_MULT) ? alu_a * alu_b : {hi, lo};
   end
 end
 
@@ -398,7 +398,7 @@ end
 
       // 実験 9 のヒント（７）：mflo 命令実行時に {hi, lo} の lo を result に出力する記述の追加
       // (update 2019/11/14 14:46)
-      'ALU_MFLO: begin
+      `ALU_MFLO: begin
         result <= lo;
       end
 
